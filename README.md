@@ -22,4 +22,5 @@ The data structures in these folders feature certain methods and inherit and ove
 10. Strcuture::contains(Item& i): Checks if the structure has a certain item  in it, more useful once the structure is used in outside implementations. Such as Sets in the graph implementation.
 11. `<, <=, >,>=` Operators (Only for Sets): Used to test the amount of items two sets can share, the equality part means they are of the same size and have ALL the same values. < denotes left hand side shares all of its members with the right, but right hand has more members in total, some of which do not belong to the left. The > and >= are just the opposite or negation of (!) of < and <= respectively, and can be written as return !(this > rhs) or !(this >= rhs) once the other operators are defined
 12. `int used; int mod_count;` : Private instance variables that can be used to cache size and modification count.
+13. `bool (*cgt) gt(const T& a, const T& b);` gt or sorting function for priority queues, this function used in priority-queues provides a user-defined way to determine which items have priority with in the structure.
   
